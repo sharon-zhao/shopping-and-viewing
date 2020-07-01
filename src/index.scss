@@ -1,0 +1,66 @@
+@import '~bootstrap/scss/bootstrap';
+
+.course1 {
+  padding-top: 3rem;
+  background-size: 70rem;
+  // width: 100rem;
+  height: 25rem;
+  background-image: url("https://generalassemb.ly/sites/default/files/styles/program_header_desktop_xxl_1x/public/2020-01/1_UXDIR_HeaderImage_011420.jpg?itok=k9IcLXXL");
+}
+
+.course2 {
+  padding-top: 3rem;
+  background-size: 70rem;
+  // width: 100rem;
+  height: 25rem;
+  background-image: url("https://generalassemb.ly/sites/default/files/styles/program_header_desktop_xxl_1x/public/2020-05/1_SEI_HeaderImage_C2_taller3.jpg?itok=4i-mleFh");
+}
+
+.course3 {
+  padding-top: 3rem;
+  background-size: 70rem;
+  // width: 100rem;
+  height: 25rem;
+  background-image: url("https://generalassemb.ly/sites/default/files/styles/program_header_desktop_xxl_1x/public/2019-12/1_PDM_HeaderImage_121019.jpg?itok=ftl5eGhL");
+}
+
+.course4 {
+  padding-top: 3rem;
+  background-size: 70rem;
+  // width: 100rem;
+  height: 25rem;
+  background-image: url("https://generalassemb.ly/sites/default/files/styles/program_header_desktop_xxl_1x/public/2020-03/VIS_PT_Header_03032020.jpg?itok=vYr9wA08");
+}
+
+.ptag {
+  margin-right: 30rem;
+  margin-left: 3rem;
+  margin-top: 3rem;
+}
+
+.head {
+  margin-left: 3rem;
+}
+.subtitle {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.cardcontainer {
+  margin-left: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 0.5rem
+}
+
+.newnav {
+  background: 'black';
+}
+.Logo {
+  max-width: 250px;
+}
+.btn-primary {
+  margin: 2px;
+}
