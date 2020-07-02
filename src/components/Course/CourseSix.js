@@ -3,6 +3,7 @@ import { withRouter, Link } from 'react-router-dom'
 import Button from 'react-bootstrap/Button'
 import axios from 'axios'
 import apiUrl from '../../apiConfig'
+import { putToCart } from '../../api/cart'
 
 const CourseSix = (props) => {
   const addToCart = (event) => {
@@ -15,12 +16,12 @@ const CourseSix = (props) => {
       },
       data: {
         imageUrl: 'https://ga-core.s3.amazonaws.com/production/uploads/program/default_image/669/thumb_PartTime_DigitalMarketing.jpg',
-        title: 'UX Design Immersive: Boston',
-        price: 200
+        title: 'Digital Marketing',
+        price: 123
       }
     })
       .then(res => {
-        return res
+        putToCart(res, props.user)
       })
       .then(() => props.msgAlert({
         heading: 'Success',

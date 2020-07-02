@@ -27,7 +27,6 @@ const MyCart = (props) => {
   // }
   const cartObj = carts.products
   const onlyTitle = Object.keys(cartObj)
-  // console.log(onlyTitle)
   useEffect(() => {
     getCart(props.user)
       .then(res => {
@@ -63,11 +62,10 @@ const MyCart = (props) => {
     }
     return emptyArr
   }
-
   const quantity = () => {
     const emptyArr = []
-    if (singleArr()) {
-      const arr = singleArr()
+    const arr = singleArr()
+    if (arr[0] !== undefined) {
       for (let i = 0; i < arr.length; i++) {
         const name = arr[i].title
         const number = carts.products[name]
@@ -76,7 +74,6 @@ const MyCart = (props) => {
     }
     return emptyArr
   }
-  // console.log(quantity())
   const deleteCourse = (event, course) => {
     event.preventDefault()
     axios({
@@ -114,7 +111,7 @@ const MyCart = (props) => {
   // })
   // }
 
-  if (!courses) {
+  if (!carts) {
     return <p>Loading....</p>
   }
 

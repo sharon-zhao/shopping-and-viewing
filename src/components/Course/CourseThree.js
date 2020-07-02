@@ -3,6 +3,7 @@ import { withRouter, Link } from 'react-router-dom'
 import Button from 'react-bootstrap/Button'
 import axios from 'axios'
 import apiUrl from '../../apiConfig'
+import { putToCart } from '../../api/cart'
 
 const CourseThree = (props) => {
   const addToCart = (event) => {
@@ -20,7 +21,7 @@ const CourseThree = (props) => {
       }
     })
       .then(res => {
-        return res
+        putToCart(res, props.user)
       })
       .then(() => props.msgAlert({
         heading: 'Success',

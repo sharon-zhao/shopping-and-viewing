@@ -3,8 +3,9 @@ import { withRouter, Link } from 'react-router-dom'
 import Button from 'react-bootstrap/Button'
 import axios from 'axios'
 import apiUrl from '../../apiConfig'
+import { putToCart } from '../../api/cart'
 
-const CourseOne = (props) => {
+const CourseFive = (props) => {
   const addToCart = (event) => {
     event.preventDefault()
     axios({
@@ -15,12 +16,12 @@ const CourseOne = (props) => {
       },
       data: {
         imageUrl: 'https://ga-core.s3.amazonaws.com/production/uploads/program/default_image/14058/thumb_Tech_AI-VR-woman-headset.jpg',
-        title: 'UX Design Immersive: Boston',
-        price: 200
+        title: 'What The HTML',
+        price: 666
       }
     })
       .then(res => {
-        return res
+        putToCart(res, props.user)
       })
       .then(() => props.msgAlert({
         heading: 'Success',
@@ -58,4 +59,4 @@ const CourseOne = (props) => {
   )
 }
 
-export default withRouter(CourseOne)
+export default withRouter(CourseFive)

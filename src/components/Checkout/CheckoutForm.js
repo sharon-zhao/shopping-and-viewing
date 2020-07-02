@@ -15,6 +15,7 @@ const StripeCheckoutForm = ({ buyHistory, msgAlert, user, customer, history }) =
   const [cvc, setCvc] = useState('')
   // const [redirect, setRedirect] = useState(false)
   // const [cardToken, setCardToken] = useState('')
+  console.log(buyHistory)
   const totalCost = () => {
     let sum = 0
     buyHistory.forEach(cart => {
@@ -80,13 +81,14 @@ const StripeCheckoutForm = ({ buyHistory, msgAlert, user, customer, history }) =
           <Modal.Title className="title">Thanks For Your Purchase</Modal.Title>
           <Modal.Title className="title">Total Cost: ${totalCost()}</Modal.Title>
         </Modal.Header>
+        <Modal.Body>You Buy {buyHistory.length} Products</Modal.Body>
         {buyHistory.map(ele => (
           <div key={ele._id}>
             <Modal.Body>Course Name: {ele.title}</Modal.Body>
-            <Modal.Body>Course Price: ${ele.price}</Modal.Body>
-            <Modal.Body>~~~~~~~~~~~~~~~~~~~~~~~~~</Modal.Body>
+            <Modal.Body>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</Modal.Body>
           </div>
         ))}
+        <Modal.Body>Prepare For Learning</Modal.Body>
         <Modal.Footer>
           <Link to={'/'} ><Button onClick={handlePurchaseCompletion}>
             Confirm To Pay

@@ -63,7 +63,7 @@ const CourseIndex = () => (
         <Card.Body>
           <Card.Title><Link to='/coursefour'>Design Your Life, Design Your Quarantine: You Must Be Dreaming</Link></Card.Title>
           <Card.Text>
-
+            Gain the vocabulary and tools to tackle diverse design challenges on the job. Kickstart your portfolio and create beautiful, responsive designs for the web.
           </Card.Text>
         </Card.Body>
       </Card>
