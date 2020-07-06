@@ -28,8 +28,7 @@ const IndexMap = (props) => {
   const mapStyple = {
     marginTop: '1vw',
     width: '85vw',
-    height: '40vw',
-    position: 'absolute'
+    height: '40vw'
   }
 
   return (
@@ -48,7 +47,7 @@ const IndexMap = (props) => {
           <Marker key={'id6'} position={{ lat: 25.7617, lng: -80.1918 }} onClick={onMarkerClick6}/>
         </Map>
       </div>
-      <div className='belowMap' style={{ zIndex: 2 }}>
+      <div className='belowMap'>
         <Card style={{ width: '20rem' }}>
           <Card.Img variant="top" src="https://ga-shop.s3.amazonaws.com/production/store/locationmasthead/13/image/thumb-35e8a4eb2638dba0e42e7de79585e063.jpg" />
           <Card.Body>

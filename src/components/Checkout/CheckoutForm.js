@@ -15,7 +15,6 @@ const StripeCheckoutForm = ({ buyHistory, msgAlert, user, customer, history }) =
   const [cvc, setCvc] = useState('')
   // const [redirect, setRedirect] = useState(false)
   // const [cardToken, setCardToken] = useState('')
-  console.log(buyHistory)
   const totalCost = () => {
     let sum = 0
     buyHistory.forEach(cart => {

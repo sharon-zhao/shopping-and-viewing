@@ -125,7 +125,6 @@ $STWhite: #FFF;
   flex-wrap: wrap;
   justify-content: center;
   position: absolute;
-  z-index: 0;
 }
 
 .newYorkWord {
@@ -151,4 +150,23 @@ $STWhite: #FFF;
       background-color: red;
       border-color: white;
     }
+}
+.navi_footer {
+    clear: both;
+    background-color: #222222;
+    color: #a2a2a2;
+    padding-top: 16px;
+    padding-top: 1rem;
+    padding-bottom: 16px;
+    padding-bottom: 1rem;
+    margin-top: 10rem;
+}
+.navi_footer-grid-one-half {
+  margin-left: 4rem;
+}
+.second {
+  margin-left: 4rem;
+}
+.footerword {
+  margin-top: 3rem;
 }

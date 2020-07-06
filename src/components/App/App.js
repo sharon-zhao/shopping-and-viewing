@@ -4,6 +4,7 @@ import { Route } from 'react-router-dom'
 import AuthenticatedRoute from '../AuthenticatedRoute/AuthenticatedRoute'
 import AutoDismissAlert from '../AutoDismissAlert/AutoDismissAlert'
 import Header from '../Header/Header'
+import Footer from '../Footer/Footer'
 import SignUp from '../SignUp/SignUp'
 import SignIn from '../SignIn/SignIn'
 import SignOut from '../SignOut/SignOut'
@@ -126,12 +127,6 @@ const App = () => {
         <AuthenticatedRoute path='/applications' user={user} render={() => (
           <Application msgAlert={msgAlert} user={user}/>
         )} />
-        {/* <AuthenticatedRoute path='/applications/:id' user={user} render={({ match }) => (
-            const appId = match.params.id
-            return (
-              <OneApplication addId={ appId } msgAlert={msgAlerts} user={user}/>
-            )
-        )} /> */}
         <AuthenticatedRoute path='/update/:id' user={user} render={({ match }) => (
           <ApplicationEdit msgAlert={msgAlert} user={user}/>
         )} />
@@ -140,6 +135,7 @@ const App = () => {
             buyHistory={buyHistory} setBuyHistory={setBuyHistory}/>
         )} />
       </main>
+      <div><Footer /></div>
     </Fragment>
   )
 }

@@ -75,7 +75,6 @@ const Checkout = (props) => {
     }
     return emptyArr
   }
-  console.log(quantity())
   // if (buyHistory.length > 0) {
   //   return <Redirect to={{
   //     pathname: '/payment',
