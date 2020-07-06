@@ -1,18 +1,15 @@
 import React, { Fragment } from 'react'
-import { Nav, Navbar, Button, Dropdown, ButtonGroup } from 'react-bootstrap'
+import { Nav, Navbar, NavDropdown } from 'react-bootstrap'
 
 const authenticatedOptions = (
   <Fragment>
     <Nav.Link href="#shopping-cart">My Cart</Nav.Link>
-    <Dropdown as={ButtonGroup}>
-      <Button variant="success">User Action</Button>
-      <Dropdown.Toggle split variant="success" id="dropdown-split-basic" />
-      <Dropdown.Menu>
-        <Dropdown.Item href="#allapplications">My Application</Dropdown.Item>
-        <Dropdown.Item href="#change-password">Change Password</Dropdown.Item>
-        <Dropdown.Item href="#sign-out">Sign Out</Dropdown.Item>
-      </Dropdown.Menu>
-    </Dropdown>
+    <NavDropdown title="User Action" id="basic-nav-dropdown">
+      <NavDropdown.Item href="#allapplications">My Application</NavDropdown.Item>
+      <NavDropdown.Item href="hange-password">Change Password</NavDropdown.Item>
+      <NavDropdown.Item href="#sign-out">Sign Out</NavDropdown.Item>
+      <NavDropdown.Divider />
+    </NavDropdown>
   </Fragment>
 )
 
