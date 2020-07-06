@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import { Nav, Navbar, Button, Dropdown, ButtonGroup, Form, FormControl } from 'react-bootstrap'
+import { Nav, Navbar, Button, Dropdown, ButtonGroup } from 'react-bootstrap'
 
 const authenticatedOptions = (
   <Fragment>
@@ -26,22 +26,19 @@ const unauthenticatedOptions = (
 const alwaysOptions = (
   <Fragment>
     <Nav.Link href="#/">Home</Nav.Link>
+    <Nav.Link href="#/mapindex">Campus</Nav.Link>
   </Fragment>
 )
 
 const Header = ({ user }) => (
   <Navbar bg="dark" variant="dark">
-    <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-    <img className="Logo" src='' alt="Logo"/>
+    <Navbar.Brand href="#home">ST</Navbar.Brand>
+    <img className="Logo" src='https://toddsharon.s3.amazonaws.com/8be9d0217e8a26e56fe48ef6e4cd03d9' alt="Logo"/>
     <Nav className="mr-auto">
       { user && <span className="navbar-text mr-2">Welcome, {user.email}</span>}
       { alwaysOptions }
       { user ? authenticatedOptions : unauthenticatedOptions }
     </Nav>
-    <Form inline>
-      <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-      <Button variant="outline-info">Search</Button>
-    </Form>
   </Navbar>
 )
 

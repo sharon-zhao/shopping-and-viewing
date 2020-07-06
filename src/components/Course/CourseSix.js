@@ -38,7 +38,7 @@ const CourseSix = (props) => {
   }
   return (
     <div>
-      <div className="course1">
+      <div className="course3">
         <h2 className="head">Digital Marketing</h2>
         <p className="ptag">Your best course for career transformation. This full-time data science bootcamp features expert instruction, one-on-one career coaching, and connections to top employers to get you hired.
 

@@ -21,12 +21,22 @@ import StripeCheckoutForm from '../Checkout/CheckoutForm'
 import Application from '../application/Application'
 import ApplicationEdit from '../application/UpdateApp'
 import ApplicationIndex from '../application/GetAll'
+import MapIndex from '../Map/Map'
+import SearchCourse from '../Search/SearchCourse'
+import NewYork from '../Place/NewYork'
+import Boston from '../Place/Boston'
+import Chicago from '../Place/Chicago'
+import LosAngeles from '../Place/LA'
+import SaltLake from '../Place/Salt'
+import Miami from '../Place/Miami'
 
 const App = () => {
   const [user, setUser] = useState(null)
   const [customer, setCustomer] = useState(null)
   const [msgAlerts, setMsgAlerts] = useState([])
   const [buyHistory, setBuyHistory] = useState([])
+  const [search, setSearch] = useState('')
+  const [display, setDisplay] = useState([])
 
   const clearUser = () => setUser(null)
 
@@ -52,8 +62,34 @@ const App = () => {
         <Route path='/sign-in' render={() => (
           <SignIn msgAlert={msgAlert} setUser={setUser} setCustomer={setCustomer} />
         )} />
-        <Route exact path='/' component={CourseIndex} />
-        <Route exact path='/courseone' render={() => (
+        <Route exact path='/' render={() => (
+          <CourseIndex msgAlert={msgAlert} setSearch={setSearch} search={search} setDisplay={setDisplay} display={display} />
+        )} />
+        <Route exact path='/mapindex' render={() => (
+          <MapIndex msgAlert={msgAlert} user={user}/>
+        )} />
+        <Route exact path='/couresesearch' render={() => (
+          <SearchCourse msgAlert={msgAlert} user={user} search={search} display={display}/>
+        )} />
+        <Route exact path='/newyork' render={() => (
+          <NewYork msgAlert={msgAlert} user={user}/>
+        )} />
+        <Route exact path='/boston' render={() => (
+          <Boston msgAlert={msgAlert} user={user}/>
+        )} />
+        <Route exact path='/chicago' render={() => (
+          <Chicago msgAlert={msgAlert} user={user}/>
+        )} />
+        <Route exact path='/losangeles' render={() => (
+          <LosAngeles msgAlert={msgAlert} user={user}/>
+        )} />
+        <Route exact path='/lakecity' render={() => (
+          <SaltLake msgAlert={msgAlert} user={user}/>
+        )} />
+        <Route exact path='/miami' render={() => (
+          <Miami msgAlert={msgAlert} user={user}/>
+        )} />
+        <Route exact path='/coureseone' render={() => (
           <CourseOne msgAlert={msgAlert} user={user}/>
         )} />
         <Route exact path='/coursetwo' render={() => (

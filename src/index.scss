@@ -1,14 +1,9 @@
-@import '~bootstrap/scss/bootstrap';
-
+@import '~bootSTrap/scss/bootSTrap';
+$STFont: 'Source Sans Pro', sans-serif;;
+$STBlue: blue;
+$STRed: #FF585D;
+$STWhite: #FFF;
 .course1 {
-  padding-top: 3rem;
-  background-size: 70rem;
-  // width: 100rem;
-  height: 25rem;
-  background-image: url("https://generalassemb.ly/sites/default/files/styles/program_header_desktop_xxl_1x/public/2020-01/1_UXDIR_HeaderImage_011420.jpg?itok=k9IcLXXL");
-}
-
-.course2 {
   padding-top: 3rem;
   background-size: 70rem;
   // width: 100rem;
@@ -16,12 +11,20 @@
   background-image: url("https://generalassemb.ly/sites/default/files/styles/program_header_desktop_xxl_1x/public/2020-05/1_SEI_HeaderImage_C2_taller3.jpg?itok=4i-mleFh");
 }
 
+.course2 {
+  padding-top: 3rem;
+  background-size: 70rem;
+  // width: 100rem;
+  height: 25rem;
+  background-image: url("https://generalassemb.ly/sites/default/files/styles/program_header_desktop_xxl_1x/public/2020-01/UXDI_Header-image_012720.jpg?itok=AoH9VzbS");
+}
+
 .course3 {
   padding-top: 3rem;
   background-size: 70rem;
   // width: 100rem;
   height: 25rem;
-  background-image: url("https://generalassemb.ly/sites/default/files/styles/program_header_desktop_xxl_1x/public/2019-12/1_PDM_HeaderImage_121019.jpg?itok=ftl5eGhL");
+  background-image: url("https://generalassemb.ly/sites/default/files/styles/program_header_desktop_xxl_1x/public/2020-06/DMI_HeaderImage_062220.jpg?itok=Av_FlAOL");
 }
 
 .course4 {
@@ -29,7 +32,7 @@
   background-size: 70rem;
   // width: 100rem;
   height: 25rem;
-  background-image: url("https://generalassemb.ly/sites/default/files/styles/program_header_desktop_xxl_1x/public/2020-03/VIS_PT_Header_03032020.jpg?itok=vYr9wA08");
+  background-image: url("https://generalassemb.ly/sites/default/files/styles/program_header_desktop_xxl_1x/public/2019-11/1_AN_HeaderImage_102919.jpg?itok=sigGblFc");
 }
 
 .ptag {
@@ -59,8 +62,78 @@
   background-color: black;
 }
 .Logo {
-  max-width: 250px;
+  max-width: 4rem;
 }
 .btn-primary {
   margin: 2px;
+}
+.searchContainer {
+  background-color: #FFF;
+  border: 0.5px solid black;
+  border-radius: 25px;
+  padding-left: 1%;
+  width: 40vw;
+}
+.searchBar {
+  font-family: $STFont;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  border-radius: 10%;
+  width: 100%;
+  height: 5vh;
+  z-index: 1;
+  & input {
+    width: 90%;
+    height: 100%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+  }
+  & .searchButton {
+    text-align: center;
+    background-color: $STRed;
+    border-radius: 10%;
+    margin-right: 5%;
+    width: 10%;
+    cursor: pointer;
+    &:hover {
+      background-color: blue;
+    }
+    & button {
+      background: transparent;
+      border: none;
+      width: 100%;
+    }
+  }
+}
+
+.mapContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.mapindex {
+  display: flex;
+  justify-content: center;
+  float: right;
+}
+.belowMap {
+  margin-top: 33rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: absolute;
+  z-index: 0;
+}
+
+.newYorkWord {
+  margin-top: 2rem;
+  margin-left: 4rem;
+}
+
+.newYorkMap {
+  margin-top: -11rem;
+  margin-left: 36rem;
 }

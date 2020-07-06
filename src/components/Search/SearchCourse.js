@@ -1,36 +1,26 @@
-import Card from 'react-bootstrap/Card'
-import Form from 'react-bootstrap/Form'
-import { withRouter, Link, Redirect } from 'react-router-dom'
 import React, { useEffect, useState } from 'react'
-import Carousel from 'react-bootstrap/Carousel'
+import { withRouter, Link } from 'react-router-dom'
 import { getDisplay } from '../../api/display'
-// import Course1 from '../EachCourse/Course1'
+import Carousel from 'react-bootstrap/Carousel'
+import Card from 'react-bootstrap/Card'
 
-const CourseIndex = (props) => {
-  const [redirect, setRedirect] = useState(false)
+const SearchCourse = (props) => {
+  const [result, setResult] = useState([])
   useEffect(() => {
     getDisplay()
       .then(res => {
-        props.setDisplay(res.data.carts)
+        const allResult = res.data.carts
+        const result = allResult.filter((ele) => ele.title.toLowerCase().includes(props.search.toLowerCase()))
+        return result
+      })
+      .then((res) => {
+        setResult(res)
       })
   }, [])
-  const handleSearchInput = (event) => {
-    props.setSearch(event.target.value)
+  if (!result) {
+    return <p>Sorry we don not have what you want</p>
   }
-
-  const handleSearchSubmit = (event) => {
-    event.preventDefault()
-    setRedirect(true)
-  }
-
-  if (redirect) {
-    return <Redirect to={'/couresesearch'} />
-  }
-
-  if (props.display.length === 0) {
-    return <p>Loading....</p>
-  }
-  if (props.display) {
+  if (result) {
     return (
       <div>
         <Carousel>
@@ -56,14 +46,8 @@ const CourseIndex = (props) => {
             />
           </Carousel.Item>
         </Carousel>
-        <div className="searchContainer">
-          <Form onSubmit={handleSearchSubmit}className="searchBar">
-            <Form.Control type="text" name="search" placeholder="Search Course" onChange={handleSearchInput} />
-            <div className="searchButton"><button type='submit'>Q</button></div>
-          </Form>
-        </div>
         <div className="cardcontainer">
-          {props.display.map((course, index) => (
+          {result.map((course, index) => (
             <Card key={course._id} style={{ width: '20rem' }} className='card'>
               <Card.Img variant="top" src={course.url} />
               <Card.Body>
@@ -80,4 +64,4 @@ const CourseIndex = (props) => {
   }
 }
 
-export default withRouter(CourseIndex)
+export default withRouter(SearchCourse)
