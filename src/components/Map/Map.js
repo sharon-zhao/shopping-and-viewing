@@ -28,25 +28,26 @@ const IndexMap = (props) => {
   const mapStyple = {
     marginTop: '1vw',
     width: '85vw',
-    height: '40vw'
+    height: '40vw',
+    display: 'flex',
+    justifyContent: 'flex-start'
   }
 
   return (
-    <div className='mapContainer'>
-      <div className='mapindex' >
-        <Map
-          google={props.google}
-          containerStyle={mapStyple}
-          zoom={4.7}
-          initialCenter={center}>
-          <Marker key={'id1'} position={{ lat: 40.7128, lng: -74.0060 }} onClick={onMarkerClick1}/>
-          <Marker key={'id2'} position={{ lat: 42.3601, lng: -71.0589 }} onClick={onMarkerClick2}/>
-          <Marker key={'id3'} position={{ lat: 41.8781, lng: -87.6298 }} onClick={onMarkerClick3}/>
-          <Marker key={'id4'} position={{ lat: 34.0522, lng: -118.2437 }} onClick={onMarkerClick4}/>
-          <Marker key={'id5'} position={{ lat: 40.7608, lng: -111.8910 }} onClick={onMarkerClick5}/>
-          <Marker key={'id6'} position={{ lat: 25.7617, lng: -80.1918 }} onClick={onMarkerClick6}/>
-        </Map>
-      </div>
+    <div className='mapContainer' >
+      <Map
+        google={props.google}
+        containerStyle={mapStyple}
+        zoom={4.7}
+        initialCenter={center}>
+        <Marker key={'id1'} position={{ lat: 40.7128, lng: -74.0060 }} onClick={onMarkerClick1}/>
+        <Marker key={'id2'} position={{ lat: 42.3601, lng: -71.0589 }} onClick={onMarkerClick2}/>
+        <Marker key={'id3'} position={{ lat: 41.8781, lng: -87.6298 }} onClick={onMarkerClick3}/>
+        <Marker key={'id4'} position={{ lat: 34.0522, lng: -118.2437 }} onClick={onMarkerClick4}/>
+        <Marker key={'id5'} position={{ lat: 40.7608, lng: -111.8910 }} onClick={onMarkerClick5}/>
+        <Marker key={'id6'} position={{ lat: 25.7617, lng: -80.1918 }} onClick={onMarkerClick6}/>
+      </Map>
+
       <div className='belowMap'>
         <Card style={{ width: '20rem' }}>
           <Card.Img variant="top" src="https://ga-shop.s3.amazonaws.com/production/store/locationmasthead/13/image/thumb-35e8a4eb2638dba0e42e7de79585e063.jpg" />
