@@ -37,21 +37,14 @@ const CourseIndex = (props) => {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="https://toddsharon.s3.amazonaws.com/3a28470af7874aec0b5033f1a129fa65"
-              alt="First slide"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="https://toddsharon.s3.amazonaws.com/b02afe0de7c64091f3635611ba570def"
+              src="https://toddsharon.s3.amazonaws.com/77d5c508dc771e72d4756861f6fa3d12"
               alt="Third slide"
             />
           </Carousel.Item>
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="https://toddsharon.s3.amazonaws.com/e4e968f1d949e7ff92db527635d64161"
+              src="https://toddsharon.s3.amazonaws.com/e3ea30c38f776b7ddfda2c7f27bdaa70"
               alt="Third slide"
             />
           </Carousel.Item>
@@ -59,7 +52,7 @@ const CourseIndex = (props) => {
         <div className="searchContainer">
           <Form onSubmit={handleSearchSubmit}className="searchBar">
             <Form.Control type="text" name="search" placeholder="Search Course" onChange={handleSearchInput} />
-            <div className="searchButton"><button type='submit'>Q</button></div>
+            <div className="searchButton"><button style={{ color: 'white' }} type='submit'>Q</button></div>
           </Form>
         </div>
         <div className="cardcontainer">
