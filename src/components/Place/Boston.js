@@ -7,12 +7,12 @@ import { withRouter } from 'react-router-dom'
 const indexStyle = {
   marginTop: '20px',
   width: '30vw',
-  height: '30vw'
+  height: '30vw',
+  display: 'flex'
 }
 
 const imagestyle = {
-  width: '70rem',
-  display: 'flex'
+  width: '70rem'
 }
 
 const Boston = (props) => {
