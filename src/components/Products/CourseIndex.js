@@ -28,7 +28,7 @@ const CourseIndex = (props) => {
   }
 
   if (props.display.length === 0) {
-    return <p>Loading....</p>
+    return <p>First loading is about 6 seconds....</p>
   }
   if (props.display) {
     return (
