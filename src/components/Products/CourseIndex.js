@@ -22,7 +22,6 @@ const CourseIndex = (props) => {
     event.preventDefault()
     setRedirect(true)
   }
-
   if (redirect) {
     return <Redirect to={'/couresesearch'} />
   }
@@ -37,14 +36,14 @@ const CourseIndex = (props) => {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="https://toddsharon.s3.amazonaws.com/77d5c508dc771e72d4756861f6fa3d12"
+              src="https://express-upload.s3.amazonaws.com/525312a6d65b42ac0e57cd0562b69219"
               alt="Third slide"
             />
           </Carousel.Item>
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="https://toddsharon.s3.amazonaws.com/e3ea30c38f776b7ddfda2c7f27bdaa70"
+              src="https://express-upload.s3.amazonaws.com/2b377d68e397b28aa4122e2efee3e862"
               alt="Third slide"
             />
           </Carousel.Item>

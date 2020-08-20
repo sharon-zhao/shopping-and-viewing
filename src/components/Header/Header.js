@@ -30,7 +30,7 @@ const alwaysOptions = (
 const Header = ({ user }) => (
   <Navbar bg="dark" variant="dark">
     <Navbar.Brand href="#home">ST</Navbar.Brand>
-    <img className="Logo" src='https://toddsharon.s3.amazonaws.com/8be9d0217e8a26e56fe48ef6e4cd03d9' alt="Logo"/>
+    <img className="Logo" src='https://express-upload.s3.amazonaws.com/006ffc056a606299fb617b4533678681' alt="Logo"/>
     <Nav className="mr-auto">
       { user && <span className="navbar-text mr-2">Welcome, {user.email}</span>}
       { alwaysOptions }
