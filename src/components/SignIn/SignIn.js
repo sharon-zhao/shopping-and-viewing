@@ -12,7 +12,7 @@ class SignIn extends Component {
     super()
 
     this.state = {
-      email: 'shary@any',
+      email: 'shary@any.com',
       password: 'f'
     }
   }
