@@ -70,7 +70,7 @@ const IndexMap = (props) => {
           </Card.Body>
         </Card>
         <Card style={{ width: '20rem' }}>
-          <Card.Img variant="top" src="https://ga-shop.s3.amazonaws.com/production/store/locationmasthead/7/image/thumb-04f426ea6a344e3f256316b0e403e3cd.jpg" />
+          <Card.Img variant="top" src="https://cdn.choosechicago.com/uploads/2020/06/CC_northside-aerial-1800x1198.jpg" />
           <Card.Body>
             <Card.Title>Chicago</Card.Title>
             <Card.Text>

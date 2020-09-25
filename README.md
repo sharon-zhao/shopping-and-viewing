@@ -1,12 +1,15 @@
-# GA Boston - Client
+# ST Boston - Client
 This application allows users to view the course, apply and buy the course.
 
-## Planning Story
-This project is a challenge by using the third part api. It is a simple version of General Assembly Boston, I always use it so I am wondering if I can build one buy using all the knowledge learned.
+## Page Demo
+![](https://user-images.githubusercontent.com/62820094/94218955-a3dd1e80-feb3-11ea-8811-d000f84d2d8f.png)
+![](https://user-images.githubusercontent.com/62820094/94219289-7d6bb300-feb4-11ea-9f58-c54a9228dfe4.png)
+![](https://user-images.githubusercontent.com/62820094/94219146-1c43df80-feb4-11ea-95a7-f47aaa684d58.png)
+- Google Map API was used, you can click each mark on the map to view the details about that cities.
+![](https://user-images.githubusercontent.com/62820094/94219344-9f653580-feb4-11ea-8efe-70e7a3c48260.png)
+![](https://user-images.githubusercontent.com/62820094/94219347-a12ef900-feb4-11ea-8740-eaf8ffdf99c3.png)
+- Stripe API was used to finish the payment process, it can really charge money. Test bank account was: 4242 4242 4242 4242
 
-I am not clear about the logic of adding courses to cart, I cannot put all the information in to the cart, so I create a new version, but I have to add each course information to call the api, it's repetitive.
-
-For the checkout part, I need to delete the information in the previous cart, this is different from deleteOne we used before, I tried deleteMany() and remove() but they are not work. At last, I use loop to delete each element in the array, It's not good but can fix the problem.
 
 ## User Stories:
 - As an unregistered user, I would like to sign up with email and password.
@@ -37,11 +40,3 @@ Resources:
   2. Course
   3. Application
 https://media.git.generalassemb.ly/user/27505/files/cf007800-b6e2-11ea-8e97-ccfea43d5b65
-
-## Page Demo
-![](https://user-images.githubusercontent.com/62820094/85748705-4380ea00-b6d6-11ea-81af-4a85a4cec42a.png)
-![](https://user-images.githubusercontent.com/62820094/85748855-5b586e00-b6d6-11ea-99a4-0f5bd2472519.png)
-
-### Unsolved Problems/Future Updates
-- Combine the same content in the cart to show as number increase.
-- Pay for the course
