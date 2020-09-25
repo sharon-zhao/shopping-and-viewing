@@ -3,10 +3,15 @@ This application allows users to view the course, apply and buy the course.
 
 ## Page Demo
 ![](https://user-images.githubusercontent.com/62820094/94218955-a3dd1e80-feb3-11ea-8811-d000f84d2d8f.png)
+
 ![](https://user-images.githubusercontent.com/62820094/94219289-7d6bb300-feb4-11ea-9f58-c54a9228dfe4.png)
+- Home page
+
 ![](https://user-images.githubusercontent.com/62820094/94219146-1c43df80-feb4-11ea-95a7-f47aaa684d58.png)
 - Google Map API was used, you can click each mark on the map to view the details about that cities.
+
 ![](https://user-images.githubusercontent.com/62820094/94219344-9f653580-feb4-11ea-8efe-70e7a3c48260.png)
+
 ![](https://user-images.githubusercontent.com/62820094/94219347-a12ef900-feb4-11ea-8740-eaf8ffdf99c3.png)
 - Stripe API was used to finish the payment process, it can really charge money. Test bank account was: 4242 4242 4242 4242
 
