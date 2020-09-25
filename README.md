@@ -15,6 +15,10 @@ This application allows users to view the course, apply and buy the course.
 ![](https://user-images.githubusercontent.com/62820094/94219347-a12ef900-feb4-11ea-8740-eaf8ffdf99c3.png)
 - Stripe API was used to finish the payment process, it can really charge money. Test bank account was: 4242 4242 4242 4242
 
+![](https://user-images.githubusercontent.com/62820094/94220095-3e3e6180-feb6-11ea-919d-9f503658c5ca.png)
+
+![](https://user-images.githubusercontent.com/62820094/94220098-40082500-feb6-11ea-9162-fcf17acf0086.png)
+- User can apply this course to get more information about it.
 
 ## User Stories:
 - As an unregistered user, I would like to sign up with email and password.
@@ -31,10 +35,12 @@ This application allows users to view the course, apply and buy the course.
 - JavaScript
 - HTML
 - CSS
-- CSS Sass
-- ReactJS
+- SASS
+- React
 - Ajax (Axios)
 - Bootstrap
+- Google Map API
+- Stripe API
 
 ## Wireframe and ERD
 Wireframe:
