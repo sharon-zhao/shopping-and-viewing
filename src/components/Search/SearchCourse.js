@@ -27,21 +27,14 @@ const SearchCourse = (props) => {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="https://toddsharon.s3.amazonaws.com/3a28470af7874aec0b5033f1a129fa65"
+              src="https://express-upload.s3.amazonaws.com/525312a6d65b42ac0e57cd0562b69219"
               alt="First slide"
             />
           </Carousel.Item>
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="https://toddsharon.s3.amazonaws.com/b02afe0de7c64091f3635611ba570def"
-              alt="Third slide"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="https://toddsharon.s3.amazonaws.com/e4e968f1d949e7ff92db527635d64161"
+              src="https://express-upload.s3.amazonaws.com/2b377d68e397b28aa4122e2efee3e862"
               alt="Third slide"
             />
           </Carousel.Item>
