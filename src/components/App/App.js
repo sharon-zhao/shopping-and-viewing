@@ -90,7 +90,7 @@ const App = () => {
         <Route exact path='/miami' render={() => (
           <Miami msgAlert={msgAlert} user={user}/>
         )} />
-        <Route exact path='/courseone' render={() => (
+        <Route exact path='/coureseone' render={() => (
           <CourseOne msgAlert={msgAlert} user={user}/>
         )} />
         <Route exact path='/coursetwo' render={() => (
