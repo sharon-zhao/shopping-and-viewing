@@ -39,10 +39,18 @@ Api code: https://github.com/sharon-zhao/api-last-project
 - CSS
 - SASS
 - React
+- webpack
+- babel
 - Ajax (Axios)
 - Bootstrap
 - Google Map API
 - Stripe API
+
+## highlights
+
+- used mini-css-extract-plugin to webpack performance optimization
+- two third part api
+- functional components
 
 ## Wireframe and ERD
 Wireframe:
