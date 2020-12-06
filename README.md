@@ -48,7 +48,7 @@ Api code: https://github.com/sharon-zhao/api-last-project
 
 ## highlights
 
-- used mini-css-extract-plugin to webpack performance optimization
+- used mini-css-extract-plugin to optimize webpack performance
 - two third part api
 - functional components
 
